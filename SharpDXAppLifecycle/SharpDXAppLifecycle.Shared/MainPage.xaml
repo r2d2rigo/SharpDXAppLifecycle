@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="SharpDXAppLifecycle.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SharpDXAppLifecycle"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <SwapChainPanel x:Name="SwapChainPanel" Loaded="SwapChainPanel_Loaded" Unloaded="SwapChainPanel_Unloaded" SizeChanged="SwapChainPanel_SizeChanged" />
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Go forward" Click="Button_Click" />
+    </Grid>
+</Page>
